@@ -16,65 +16,62 @@
       <h2>Day 1 & 3: Upper Body & Core</h2>
       <ul>
         <li>
-          <strong>Dumbbell Chest Press:</strong> 10-12 reps  
-          <img src="images/dumbbell-chest-press.gif" alt="Dumbbell Chest Press GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('chest-press')">Dumbbell Chest Press:</strong> 10-12 reps
+          <div id="chest-press" class="exercise-image" style="display: none;">
+            <img src="images/dumbbell-chest-press.gif" alt="Dumbbell Chest Press GIF">
+          </div>
         </li>
         <li>
-          <strong>Bicep Curls:</strong> 10-12 reps  
-          <img src="images/bicep-curls.gif" alt="Bicep Curls GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('bicep-curls')">Bicep Curls:</strong> 10-12 reps
+          <div id="bicep-curls" class="exercise-image" style="display: none;">
+            <img src="images/bicep-curls.gif" alt="Bicep Curls GIF">
+          </div>
         </li>
         <li>
-          <strong>Plank:</strong> 20-30 seconds  
-          <img src="images/plank.gif" alt="Plank GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Bent-Over Rows:</strong> 10-12 reps  
-          <img src="images/bent-over-rows.gif" alt="Bent-Over Rows GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Bird-Dog:</strong> 10 reps each side  
-          <img src="images/bird-dog.gif" alt="Bird-Dog GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Lateral Raises:</strong> 10-12 reps  
-          <img src="images/lateral-raises.gif" alt="Lateral Raises GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('plank')">Plank:</strong> 20-30 seconds
+          <div id="plank" class="exercise-image" style="display: none;">
+            <img src="images/plank.gif" alt="Plank GIF">
+          </div>
         </li>
       </ul>
-      <p><strong>Rest:</strong> 1-2 minutes. Repeat 2-3 times.</p>
     </section>
     <section>
       <h2>Day 2 & 4: Lower Body & Core</h2>
       <ul>
         <li>
-          <strong>Glute Bridges:</strong> 12-15 reps  
-          <img src="images/gluteBridges.gif" alt="Glute Bridges GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('glute-bridges')">Glute Bridges:</strong> 12-15 reps
+          <div id="glute-bridges" class="exercise-image" style="display: none;">
+            <img src="images/glute-bridges.gif" alt="Glute Bridges GIF">
+          </div>
         </li>
         <li>
-          <strong>Low Step-Ups:</strong> 10 reps each leg  
-          <img src="images/low-step-ups.gif" alt="Low Step-Ups GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('low-step-ups')">Low Step-Ups:</strong> 10 reps each leg
+          <div id="low-step-ups" class="exercise-image" style="display: none;">
+            <img src="images/low-step-ups.gif" alt="Low Step-Ups GIF">
+          </div>
         </li>
         <li>
-          <strong>Side Lunges:</strong> 10 reps each leg  
-          <img src="images/side-lunges.gif" alt="Side Lunges GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Romanian Deadlifts:</strong> 10-12 reps  
-          <img src="images/romanian-deadlifts.gif" alt="Romanian Deadlifts GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Russian Twists:</strong> 10 reps each side  
-          <img src="images/russian-twists.gif" alt="Russian Twists GIF" class="exercise-gif">
-        </li>
-        <li>
-          <strong>Calf Raises:</strong> 15 reps  
-          <img src="images/calf-raises.gif" alt="Calf Raises GIF" class="exercise-gif">
+          <strong class="exercise" onclick="toggleImage('side-lunges')">Side Lunges:</strong> 10 reps each leg
+          <div id="side-lunges" class="exercise-image" style="display: none;">
+            <img src="images/side-lunges.gif" alt="Side Lunges GIF">
+          </div>
         </li>
       </ul>
-      <p><strong>Rest:</strong> 1-2 minutes. Repeat 2-3 times.</p>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Workout Program by Catherine</p>
+    <p>&copy; 2024 Workout Program by [Your Name]</p>
   </footer>
+
+  <script>
+    function toggleImage(id) {
+      const element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
